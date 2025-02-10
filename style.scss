@@ -6,7 +6,14 @@
 @import './scss/base/global';
 
 //components
+@import './scss/components/arrow-link';
+@import './scss/components/btns';
+@import './scss/components/search-form';
 
 //layouts
+@import './scss/layouts/header';
+
 
 //section
+
+@import './scss/sections/hero';

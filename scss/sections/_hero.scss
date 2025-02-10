@@ -1,0 +1,79 @@
+.hero {
+  position: relative;
+  height: 120rem;
+  padding-top: 14rem;
+  background-image: url('../images/hero_ellipse.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 11rem;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+  
+    display: block;
+    width: 53rem;
+    height: 50rem;
+    background-image:
+     url('../images/big_burger.webp'),
+     url('../images/white_ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    background-size: 48rem 37rem, 46rem 46rem;
+  }
+
+  &::before {
+    left: 3rem;
+  }
+  &::after {
+    right: 3rem;
+    transform: scaleX(-1);
+  }
+
+  &__inner {
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+
+  &__content {
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    max-width: 67rem;
+    color: $c-white;
+    text-stroke: 2px $c-black;
+    -webkit-text-stroke: 2px $c-white;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    &::before,
+    &::after {
+      // background-color: $c-white;
+      margin-top: -6rem;
+    }
+  }
+
+  // .hero__description
+
+  &__description {
+    max-width: 48rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: rgba($c-white, 0.5);
+  }
+
+  // .hero__form
+
+  &__form {
+  }
+}
+
+
+
