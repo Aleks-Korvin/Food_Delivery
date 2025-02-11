@@ -114,10 +114,7 @@ body {
 }
 
 .arrow-link {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 8rem;
+  position: relative;
   display: block;
   width: 6.4rem;
   height: 6.4rem;
@@ -208,6 +205,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 11rem;
+  margin-bottom: 8rem;
 }
 .hero::before, .hero::after {
   content: "";
@@ -254,4 +252,10 @@ body {
   font-size: 1.8rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
+}
+.hero__arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8rem;
 }/*# sourceMappingURL=style.css.map */
